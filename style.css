@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.container {
+  max-width: 750px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.search-box {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+label {
+  font-weight: bold;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.textareas {
+  width: 100%;
+  height: 220px;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  resize: vertical;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+.textareas:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.btn-mcqs {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 22px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-mcqs:hover {
+  background-color: #45a049;
+}
+
+#result {
+  background-color: #ffffff;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#result p {
+  margin-bottom: 12px;
+}
+
+#result p b {
+  color: #28a745;
+}
+
+@media (max-width: 600px) {
+  .textareas {
+    font-size: 14px;
+    height: 180px;
+  }
+
+  .btn-mcqs {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  #result {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MCQ Maker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1> MCQ Creator Tool</h1>
+
+    <div class="search-box">
+      <label for="mcqsBox">Enter your question and options below:</label>
+      <textarea
+        class="textareas"
+        id="mcqsBox"
+        placeholder="Example:\nWhat is 2 + 2?\n3\n*4\n5\n6"
+      ></textarea>
+
+      <button class="btn-mcqs" onclick="showMcqs()">Show Result</button>
+    </div>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="mcqsapp.js"></script>
+</body>
+</html>
